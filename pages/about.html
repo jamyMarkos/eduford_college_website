@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">COURSE</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>World's Biggest University</h1>
+                <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS, <br> JavaScript and you good to go.</p>
+                <a href="#" class="hero-btn">Visit Us To Know More</a>
+            </div>
+
+        </section>
+
+        
+        
+        <!-- -------Footer-------- -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sed quas aliquam mollitia recusandae eaque esse fugit, quaerat est distinctio <br>architecto! Labore, est. Corrupti accusamus veritatis doloremque eaque culpa maxime!</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div>&copy; Copyright 2023</div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <!--------------JavaScript To Toggle The Menu--------------->
+        <script>
+            var navLinks = document.getElementById('navLinks')
+            function hideMenu() {
+                navLinks.style.right = '-200px'
+            }
+            function showMenu() {
+                navLinks.style.right = '0px'
+            }
+        </script>
+    </body>
+</html>
